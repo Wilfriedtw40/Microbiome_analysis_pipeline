@@ -1,0 +1,152 @@
+This is cutadapt 4.0 with Python 3.9.12
+Command line parameters: -g CCTACGGGNGGCWGCAG -a GGATTAGATACCCBDGTAGTC -G GACTACHVGGGTATCTAATCC -A CTGCWGCCNCCCGTAGG --times 2 --error-rate 0.1 --minimum-length 10 --overlap 12 --discard-untrimmed --match-read-wildcards -o C:/Users/riri4/OneDrive/Documents/GitHub/Microbiome_analysis_pipeline/data/primer_removed/ERR13464090_R1_primerfree.fastq.gz -p C:/Users/riri4/OneDrive/Documents/GitHub/Microbiome_analysis_pipeline/data/primer_removed/ERR13464090_R2_primerfree.fastq.gz C:/Users/riri4/OneDrive/Documents/GitHub/Microbiome_analysis_pipeline/data/ERR13464090_1.fastq.gz C:/Users/riri4/OneDrive/Documents/GitHub/Microbiome_analysis_pipeline/data/ERR13464090_2.fastq.gz
+Processing paired-end reads on 1 core ...
+Finished in 25.79 s (84 µs/read; 0.71 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            307,036
+  Read 1 with adapter:                 305,519 (99.5%)
+  Read 2 with adapter:                 304,229 (99.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   5 (0.0%)
+Pairs discarded as untrimmed:            4,069 (1.3%)
+Pairs written (passing filters):       302,962 (98.7%)
+
+Total basepairs processed:   184,478,573 bp
+  Read 1:    92,346,331 bp
+  Read 2:    92,132,242 bp
+Total written (filtered):    170,531,124 bp (92.4%)
+  Read 1:    85,978,134 bp
+  Read 2:    84,552,990 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CCTACGGGNGGCWGCAG; Type: regular 5'; Length: 17; Trimmed: 305485 times
+
+Minimum overlap: 12
+No. of allowed errors:
+1-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	7	0.0	1	2 5
+15	37	0.0	1	18 19
+16	2252	0.0	1	283 1969
+17	302511	0.0	1	290767 11744
+18	675	0.0	1	96 579
+19	1	0.0	1	0 1
+24	1	0.0	1	0 1
+41	1	0.0	1	1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: GGATTAGATACCCBDGTAGTC; Type: regular 3'; Length: 21; Trimmed: 142 times
+
+Minimum overlap: 12
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 29.6%
+  C: 4.2%
+  G: 49.3%
+  T: 14.1%
+  none/other: 2.8%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	2	0.0	1	2
+19	2	0.0	1	0 0 2
+20	5	0.0	2	0 4 1
+21	105	0.0	2	75 12 18
+22	2	0.0	2	0 0 2
+23	1	0.0	2	0 0 1
+24	1	0.0	2	0 1
+25	2	0.0	2	0 2
+32	1	0.0	2	1
+33	2	0.0	2	0 1 1
+35	5	0.0	2	4 0 1
+36	8	0.0	2	4 2 2
+39	1	0.0	2	1
+53	1	0.0	2	1
+57	1	0.0	2	1
+79	1	0.0	2	0 1
+133	1	0.0	2	0 0 1
+156	1	0.0	2	0 0 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: GACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 21; Trimmed: 304119 times
+
+Minimum overlap: 12
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	4	0.0	1	4
+17	2	0.0	1	1 1
+18	19	0.0	1	2 17
+19	150	0.0	1	16 43 91
+20	4363	0.0	2	776 3254 333
+21	298656	0.0	2	291832 5693 1131
+22	918	0.0	2	106 731 81
+23	4	0.0	2	0 0 4
+24	1	0.0	2	0 1
+29	1	0.0	2	1
+194	1	0.0	2	0 0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: CTGCWGCCNCCCGTAGG; Type: regular 3'; Length: 17; Trimmed: 203 times
+
+Minimum overlap: 12
+No. of allowed errors:
+1-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 42.4%
+  C: 28.1%
+  G: 17.2%
+  T: 12.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+16	39	0.0	1	0 39
+17	104	0.0	1	49 55
+18	4	0.0	1	0 4
+20	10	0.0	1	6 4
+21	4	0.0	1	2 2
+28	5	0.0	1	3 2
+29	3	0.0	1	2 1
+31	5	0.0	1	4 1
+32	3	0.0	1	2 1
+35	1	0.0	1	0 1
+43	1	0.0	1	0 1
+51	1	0.0	1	1
+56	3	0.0	1	2 1
+62	1	0.0	1	0 1
+71	1	0.0	1	0 1
+72	1	0.0	1	1
+74	1	0.0	1	1
+91	1	0.0	1	1
+96	1	0.0	1	0 1
+99	1	0.0	1	0 1
+105	1	0.0	1	0 1
+106	1	0.0	1	0 1
+115	1	0.0	1	0 1
+123	1	0.0	1	0 1
+124	1	0.0	1	1
+126	1	0.0	1	0 1
+127	1	0.0	1	0 1
+170	1	0.0	1	0 1
+183	1	0.0	1	0 1
+218	1	0.0	1	0 1
+237	2	0.0	1	0 2
+238	1	0.0	1	0 1
