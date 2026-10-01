@@ -1,5 +1,8 @@
 #setup work environment
-knitr::opts_knit$set(root.dir = 'C:/Users/riri4/OneDrive/Bureau/Stage_Bernard/16S_NCCR')
+if (!requireNamespace("here", quietly = TRUE)) {
+  BiocManager::install("here")
+}
+library(here)
 
 #install packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -17,8 +20,8 @@ library(tidyverse)
 
 #define paths, core variables and create directories
 my_root <- "."
-my_plots <- file.path(my_root, "plots", "01_preprocessing")
-common_files <- "C:/Users/riri4/OneDrive/Bureau/Stage_Bernard/16S_NCCR/data"
+my_plots <- here::here("results", "plots", "filtering_and_trimming")
+common_files <- here::here("data")
 
 dir.create(my_plots, showWarnings = F, recursive = T)
 
