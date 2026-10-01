@@ -47,3 +47,18 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Raw data and analysis outputs
+data/
+results/
+
+# Sequencing files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Large R objects and workspace files
+*.rds
+*.RData
+.Rhistory
