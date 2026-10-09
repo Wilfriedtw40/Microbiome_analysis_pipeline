@@ -1,5 +1,8 @@
-#####setup work environment
-knitr::opts_knit$set(root.dir = 'C:/Users/riri4/OneDrive/Bureau/Stage_Bernard/16S_NCCR')
+#setup work environment
+if (!requireNamespace("here", quietly = TRUE)) {
+  BiocManager::install("here")
+}
+library(here)
 
 ######install packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -18,8 +21,8 @@ library(tidyverse)
 
 ######define paths, core variables and create directories
 my_root <- "."
-my_plots <- file.path(my_root, "plots", "02_denoising")
-common_files <- "C:/Users/riri4/OneDrive/Bureau/Stage_Bernard/16S_NCCR/data"
+common_files <- here::here("data")
+my_plots <- here::here("results", "plots", "denoising_ASV_and_chimeraRemoval")
 
 dir.create(my_plots, showWarnings = F, recursive = T)
 
